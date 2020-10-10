@@ -34,9 +34,8 @@
 <% if (theme.banner.enable) { %>
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/compression/' + new Date().getDay() + '.jpg') %>)');
-    //webp格式色差太大了，不适合做banner图（虽然体积小了一半
-    //$('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/compression/' + new Date().getDay() + '.webp') %>)');
+    var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/compression/') %>" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 <% } else { %>
 <script>

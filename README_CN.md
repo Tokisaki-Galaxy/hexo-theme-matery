@@ -181,6 +181,21 @@ layout: "friends"
     "title": "前去学习"
 }]
 ```
+### 新建 404 页
+
+如果在你的博客 `source` 目录下还没有 `404.md` 文件，那么你就需要新建一个
+
+编辑你刚刚新建的页面文件 `/source/404.md`，至少需要以下内容：
+
+```yaml
+---
+title: 404
+date: 2018-09-30 17:25:30
+type: "404"
+layout: "404"
+description: "Oops～，我崩溃了！找不到你想要的页面 :("
+---
+```
 
 ### 菜单导航配置
 
@@ -431,12 +446,12 @@ feed:
 # 是否在首页显示音乐
 music:
   enable: true
-  title:     	    #非吸底模式有效
+  title:     	    # 非吸底模式有效
     enable: true
     show: 听听音乐
-  server: netease   #require music platform: netease, tencent, kugou, xiami, baidu
-  type: playlist    #require song, playlist, album, search, artist
-  id: 503838841     #require song id / playlist id / album id / search keyword
+  server: netease   # require music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist    # require song, playlist, album, search, artist
+  id: 503838841     # require song id / playlist id / album id / search keyword
   fixed: false      # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'
@@ -453,7 +468,9 @@ music:
 >
 > `type`可选`song`（歌曲），`playlist`（歌单），`album`（专辑），`search`（搜索关键字），`artist`（歌手）
 >
-> `id`获取示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，地址栏有一串数字，`playlist`的`id`即为这串数字。
+> `id`获取方法示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，浏览器地址栏后面会有一串数字，`playlist`的`id`
+>
+> 即为这串数字。
 
 
 
@@ -588,6 +605,17 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 ## 版本记录
 
+- v1.3.2
+  - 新增了繁体字的支持；
+  - 新增了 404 页面；
+  - 其他小问题修改；
+- v1.3.1
+  - 新增了 `kbd` 样式；
+  - 修复了子目录部署时词云中链接有误的问题；
+  - 移除了 TOC 中的竖线；
+  - 修复了首页 icon 图标中的 tooltip 不显示的问题；
+  - 修复生成静态文件时，每天切换 banner 不生效的问题；
+  - 更新了 `miniValine` 中的一些配置；
 - v1.3.0
   - 新增了支持子目录部署的功能（如：`Gitee`）；
   - 新增了 `MiniValine` 评论系统；

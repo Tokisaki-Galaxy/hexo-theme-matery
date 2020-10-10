@@ -13,6 +13,10 @@
    <%- partial('_partial/background') %>
 <% } %>
 
+<% if (theme.background.enable) { %>
+   <%- partial('_partial/background') %>
+<% } %>
+
 <body>
     <% if (theme.loadingPages.enable) { %>
         <div id="loading-container">
