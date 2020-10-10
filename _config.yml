@@ -15,7 +15,8 @@ menu:
     icon: fas fa-archive
   # 二级菜单写法如下
 #  Medias:
-  Resources:
+  Interesting:
+    url: /
     icon: fas fa-list
     children:
       - name: Store
@@ -36,12 +37,16 @@ menu:
   About:
     url: /about
     icon: fas fa-user-circle
-  Contact:
-    url: /contact
-    icon: fas fa-comments
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
+    children:
+      - name: About
+        url: /about
+        icon: fas fa-user-circle
+      - name: Contact
+        url: /contact
+        icon: fas fa-comments
+      - name: Friends
+        url: /friends
+        icon: fas fa-address-book
 # Website start time.
 # 站点运行开始时间.
 time:
