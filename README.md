@@ -179,6 +179,21 @@ Also, create a new `_data` directory in your blog's `source` directory and a new
     "title": "Read More"
 }]
 ```
+### new 404 page
+
+If the `source` directory of your blog doesn't have `404.md` file, you need to new one
+
+to edit your new page files`/source/404.md`, you need somethings as follows:
+
+```yaml
+---
+title: 404
+date: 2020-05-30 00:00:00
+type: "404"
+layout: "404"
+description: "Cannot find the page you want :("
+---
+```
 
 ### Menu navigation configuration
 
@@ -451,7 +466,9 @@ music:
 >
 >For example to get the `id`:open NetEase cloud music in the browser , click the playlist of my love , there will a string of 
 >
->numbers ,  the `playlist`\`s `id` just is the number.
+>numbers  in the browser\`s address bar  ,  the `playlist`\`s `id` just is the string of numbers.
+
+
 
 ## Post Front-matter
 
@@ -586,6 +603,10 @@ There are 24 featured pictures in `/source/medias/featureimages`,you can add or 
 
 ## Changelog
 
+- v1.3.2
+  - Added support for traditional characters;
+  - Added 404 page;
+  - Fixed other minor issues；
 - v1.3.1
   - Added `kbd` style;
   - Fixed an issue with incorrect links in the word cloud when deploying subdirectories;
