@@ -233,23 +233,23 @@
         </div>
         <div class="card">
 
-            <% if (theme.gitalk && theme.gitalk.enable) { %>
+            <% if (theme.gitalk && theme.gitalk.enable && page.comments) { %>
             <%- partial('_partial/gitalk') %>
             <% } %>
 
-            <% if (theme.gitment.enable) { %>
+            <% if (theme.gitment.enable && page.comments) { %>
             <%- partial('_partial/gitment') %>
             <% } %>
 
-            <% if (theme.disqus.enable) { %>
+            <% if (theme.disqus.enable && page.comments) { %>
             <%- partial('_partial/disqus') %>
             <% } %>
 
-            <% if (theme.livere && theme.livere.enable) { %>
+            <% if (theme.livere && theme.livere.enable && page.comments) { %>
             <%- partial('_partial/livere') %>
             <% } %>
 
-            <% if (theme.valine && theme.valine.enable) { %>
+            <% if (theme.valine && theme.valine.enable && page.comments) { %>
             <%- partial('_partial/valine') %>
             <% } %>
 

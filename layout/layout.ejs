@@ -1,9 +1,34 @@
 <!DOCTYPE HTML>
 <html lang="<%= config.language %>">
 <%- partial('_partial/head') %>
+<!DOCTYPE HTML>
+<html lang="<%= config.language %>">
+<%- partial('_partial/head') %>
+
+<% if (theme.loadingPages.enable) { %>
+   <%- partial('_partial/loading-pages') %>
+<% } %>
+ 
+<% if (theme.background.enable) { %>
+   <%- partial('_partial/background') %>
+<% } %>
 
 <body>
+    <% if (theme.loadingPages.enable) { %>
+        <div id="loading-container">
+             <p class="loading-text">少女祈祷中 · · · </p> 
+             <div class="loading-image">
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div> 
+                 <div></div>
+             </div>
+        </div>
+    <% } %>
+
     <%- partial('_partial/header') %>
+
     <%- body %>
 
     <%- partial('_partial/footer') %>
@@ -16,7 +41,9 @@
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.aos) %>"></script>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.scrollProgress) %>"></script>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.lightgallery) %>"></script>
-    <script src="<%- theme.jsDelivr.url %><%- url_for('/js/matery.js') %>"></script>
+    
+    <!--<script src="<%- theme.jsDelivr.url %><%- url_for('/js/matery.js') %>"></script>-->
+    <script src="<%- theme.jsDelivr.url %><%- url_for('/js/matery.min.js') %>"></script>
 
     <%- partial('_partial/baidu-analytics') %>
     <%- partial('_partial/baidu-push') %>

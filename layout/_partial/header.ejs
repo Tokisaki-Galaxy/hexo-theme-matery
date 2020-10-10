@@ -17,4 +17,9 @@
         <% } %>
     </nav>
 
+    <!-- 加载Live2D -->
+    <% if (theme.live2d.enable ) { %>
+    <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %>/waifu/waifu.css"/>
+    <% } %>
+
 </header>

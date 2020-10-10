@@ -74,16 +74,32 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <%- partial('_partial/google-analytics') %>
     <title><%= pageTitle %></title>
-    <link rel="icon" type="<%= iconType %>" href="<%- theme.jsDelivr.url %><%- url_for(theme.favicon) %>">
+    <!-- <link rel="icon" type="<%= iconType %>" href="<%- theme.jsDelivr.url %><%- url_for(theme.favicon) %>"> -->
+    <link rel="icon" type="<%= iconType %>" href="<%- url_for(theme.favicon) %>">
 
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.fontAwesome) %>">
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.materialize) %>">
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.aos) %>">
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.animate) %>">
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.lightgallery) %>">
-    <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for('/css/matery.css') %>">
-    <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for('/css/my.css') %>">
+    <!--<link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for('/css/matery.css') %>">-->
+    <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for('/css/matery.min.css') %>">
 
+    <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.mycss) %>">
+    
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.jquery) %>"></script>
+
+<!--幼圆，字体
+<script type="text/javascript" src="https://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+<script type="text/javascript">
+   $webfont.load("body", "87f3f7ddc3d943a5bd38eef53c1cfbd0", "YouYuan");
+   /*$webfont.load("#id1,.class1,h1", "87f3f7ddc3d943a5bd38eef53c1cfbd0", "YouYuan");*/
+   /*．．．*/
+   $webfont.draw();
+</script>-->
+
+<% if (page.noindex) { %>
+<meta name="robots" content="noindex">
+<% } %>
 
 </head>

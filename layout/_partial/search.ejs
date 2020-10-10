@@ -10,9 +10,12 @@
     </div>
 </div>
 
-<script src="<%- theme.jsDelivr.url %><%- url_for('/js/search.js') %>"></script>
+<!--<script src="<%- theme.jsDelivr.url %><%- url_for('/js/search.js') %>"></script>-->
+<script src="<%- theme.jsDelivr.url %><%- url_for('/js/search.min.js') %>"></script>
+
 <script type="text/javascript">
 $(function () {
-    searchFunc("<%- theme.jsDelivr.url %><%- url_for('search.xml') %>", 'searchInput', 'searchResult');
+    //searchFunc("<%- theme.jsDelivr.url %><%- url_for('search.xml') %>", 'searchInput', 'searchResult');
+    searchFunc("<%- config.url %><%- url_for('search.xml') %>", 'searchInput', 'searchResult');
 });
 </script>

@@ -15,7 +15,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['<%= theme.subtitle.sub1 %>','<%= theme.subtitle.sub2 %>'],
+                        strings: ['<%= theme.subtitle.sub1 %>','<%= theme.subtitle.sub2 %>','<%= theme.subtitle.sub3 %>','<%= theme.subtitle.sub4 %>','<%= theme.subtitle.sub5 %>','<%= theme.subtitle.sub6 %>'],
                         startDelay: <%= theme.subtitle.startDelay %>,
                         typeSpeed: <%= theme.subtitle.typeSpeed %>,
                         loop: <%= theme.subtitle.loop %>,
@@ -34,7 +34,9 @@
 <% if (theme.banner.enable) { %>
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/' + new Date().getDay() + '.jpg') %>)');
+    $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/compression/' + new Date().getDay() + '.jpg') %>)');
+    //webp格式色差太大了，不适合做banner图（虽然体积小了一半
+    //$('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/compression/' + new Date().getDay() + '.webp') %>)');
 </script>
 <% } else { %>
 <script>
