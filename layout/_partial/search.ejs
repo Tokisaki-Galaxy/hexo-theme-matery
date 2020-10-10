@@ -15,7 +15,6 @@
 
 <script type="text/javascript">
 $(function () {
-    //searchFunc("<%- theme.jsDelivr.url %><%- url_for('search.xml') %>", 'searchInput', 'searchResult');
-    searchFunc("<%- config.url %><%- url_for('search.xml') %>", 'searchInput', 'searchResult');
+    searchFunc("<%- url_for('search.xml') %>", 'searchInput', 'searchResult');
 });
 </script>
