@@ -24,11 +24,11 @@
 <% if (theme.banner.enable) { %>
     <script>
         // 每天切换 banner 图.  Switch banner image every day.
-        var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/compression/') %>" + new Date().getDay() + '.jpg';
+        var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/compression/') %>" + new Date().getDay() + '.webp';
         $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
     </script>
 <% } else { %>
     <script>
-        $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
+        $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.webp') %>)');
     </script>
 <% } %>
