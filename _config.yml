@@ -415,46 +415,49 @@ baiduPush: true
 # 注意，将".min"添加到任何 JS/CSS 文件，如果一个不存在， jsd将为你生成它
 libs:
   css:
-    fontAwesome: /libs/awesome/css/all.min.css # V5.11.1
-    materialize: /libs/materialize/materialize.min.css # 1.0.0
-    aos: /libs/aos/aos.min.css
-    animate: /libs/animate/animate.min.css # V3.5.1
-    lightgallery: /libs/lightGallery/css/lightgallery.min.css # V1.6.11
-    aplayer: /libs/aplayer/APlayer.min.css
-    dplayer: /libs/dplayer/DPlayer.min.css
-    gitalk: /libs/gitalk/gitalk.min.css
-    jqcloud: /libs/jqcloud/jqcloud.min.css
-    tocbot: /libs/tocbot/tocbot.min.css
-    mycss: /css/my.min.css
+    matery: /css/matery.css
+    mycss: /css/my.css
+    fontAwesome: /libs/awesome/css/all.css # V5.11.1
+    materialize: /libs/materialize/materialize.css # 1.0.0
+    aos: /libs/aos/aos.css
+    animate: /libs/animate/animate.css # V3.5.1
+    lightgallery: /libs/lightGallery/css/lightgallery.css # V1.6.11
+    aplayer: /libs/aplayer/APlayer.css
+    dplayer: /libs/dplayer/DPlayer.css
+    gitalk: /libs/gitalk/gitalk.css
+    jqcloud: /libs/jqcloud/jqcloud.css
+    tocbot: /libs/tocbot/tocbot.css
     gallery: /css/gallery.css
     jquery.fancybox: /libs/fancybox/jquery.fancybox.css
-    justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.css
+    justifiedGallery: /libs/justifiedGallery/justifiedGallery.css
   js:
-    jquery: /libs/jquery/jquery.min.js
-    materialize: /libs/materialize/materialize.min.js # 1.0.0
-    masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
-    aos: /libs/aos/aos.min.js
-    scrollProgress: /libs/scrollprogress/scrollProgress.min.js
-    lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
+    matery: /js/matery.js
+    search: /js/search.js
+    jquery: /libs/jquery/jquery.js
+    materialize: /libs/materialize/materialize.js # 1.0.0
+    masonry: /libs/masonry/masonry.pkgd.js # v4.0.0
+    aos: /libs/aos/aos.js
+    scrollProgress: /libs/scrollprogress/scrollProgress.js
+    lightgallery: /libs/lightGallery/js/lightgallery-all.js # V1.6.11
     clicklove: /libs/others/clicklove.js
     busuanzi: /libs/others/busuanzi.pure.mini.js
-    aplayer: /libs/aplayer/APlayer.min.js
-    dplayer: /libs/dplayer/DPlayer.min.js
-    crypto: /libs/cryptojs/crypto-js.min.js
-    echarts: /libs/echarts/echarts.min.js
-    gitalk: /libs/gitalk/gitalk.min.js
-    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
-    jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
-    tocbot: /libs/tocbot/tocbot.min.js
-    canvas_nest: /libs/background/canvas-nest.min.js
-    ribbon: /libs/background/ribbon.min.js
-    ribbonRefresh: /libs/background/ribbon-refresh.min.js
-    ribbon_dynamic: /libs/background/ribbon-dynamic.min.js
-    instantpage: /libs/instantpage/instantpage.min.js
+    aplayer: /libs/aplayer/APlayer.js
+    dplayer: /libs/dplayer/DPlayer.js
+    crypto: /libs/cryptojs/crypto-js.js
+    echarts: /libs/echarts/echarts.js
+    gitalk: /libs/gitalk/gitalk.js
+    valine: /libs/valine/Valine.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    minivaline: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.js
+    jqcloud: /libs/jqcloud/jqcloud-1.0.4.js
+    tocbot: /libs/tocbot/tocbot.js
+    canvas_nest: /libs/background/canvas-nest.js
+    ribbon: /libs/background/ribbon.js
+    ribbonRefresh: /libs/background/ribbon-refresh.js
+    ribbon_dynamic: /libs/background/ribbon-dynamic.js
+    instantpage: /libs/instantpage/instantpage.js
     gallery-encrypt: /js/gallery-encrypt.js
     fancybox: /libs/fancybox/fancybox.js
-    justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.js
+    justifiedGallery: /libs/justifiedGallery/justifiedGallery.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
