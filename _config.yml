@@ -314,7 +314,7 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: true
+  enable: false
   appId: 8AtXU8W69pXHWEHIDuuuMLy3-MdYXbMMI
   appKey: betFnrfutjK2Aa3oKIBvJJnv
   notify: true
@@ -330,25 +330,25 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: false
-  appId: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
-  appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
-  mode: DesertsP # DesertsP or xCss
+  enable: true
+  appId: 8AtXU8W69pXHWEHIDuuuMLy3-MdYXbMMI # Your leancloud application appid
+  appKey: betFnrfutjK2Aa3oKIBvJJnv # Your leancloud application appkey
+  mode: xCss # DesertsP or xCss
   placeholder: Write a Comment # Comment box placeholder
   math: true # Support MathJax.
   md: true # Support Markdown.
-  enableQQ: false # Enable QQ avatar API.
+  enableQQ: true # Enable QQ avatar API.
   NoRecordIP: false # Do not record commenter IP.
   visitor: true # Article reading statistics.
   maxNest: 6 # Sub-comment maximum nesting depth.
   pageSize: 6 # Pagination size.
-  adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
+  adminEmailMd5: 43d241fa2b27d31f5448cfdb47d618c0 # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
   tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
     - 管理员
     - 小伙伴
     - 访客
   master: # The MD5 String Array of master Email to show master Flag.[Just Only xCss Style mode]
-    - de8a7aa53d07e6b6bceb45c64027763d
+    - 43d241fa2b27d31f5448cfdb47d618c0
   friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
     - b5bd5d836c7a0091aa8473e79ed4c25e
     - adb7d1cd192658a55c0ad22a3309cecf
