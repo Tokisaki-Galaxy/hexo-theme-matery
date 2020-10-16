@@ -64,8 +64,8 @@ cover:
   autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
   duration: 120 # 切换延迟时间. Switching delay time.
   intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
-  useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
-  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
+  useConfig: false # 是否使用配置文件, 在 _data/covers.min.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
+  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.min.json 移动到 my-blog/source/_data/下修改配置即可
 
 # index page dream text,
 # 配置首页显示"梦想"的语句.
@@ -117,13 +117,13 @@ video:
 recommend:
   enable: true
   showTitle: true
-  useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
-  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
+  useConfig: false # 是否使用配置文件, 在 _data/recommends.min.json 下配置推荐文章, false则会走主题配置的 top 属性
+  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.min.json 移动到 my-blog/source/_data/下修改配置即可
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
 #favicon: /favicon.png
-favicon: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/favicon.png
+favicon: https://cdn.min.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/favicon.png
 logo: /medias/logo.png
 
 # The configuration of the second button in the home banner,
@@ -187,7 +187,7 @@ copyright:
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
 mathjax:
   enable: true
-  cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.min.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
 # Before you activate, please confirm that you have installed the hexo-wordcount plugin,
@@ -362,12 +362,12 @@ minivaline:
   # Expression Url.
   # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
   emoticonUrl:
-    - https://cdn.jsdelivr.net/npm/alus@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+    - https://cdn.min.jsdelivr.net/npm/alus@latest
+    - https://cdn.min.jsdelivr.net/gh/MiniValine/qq@latest
+    - https://cdn.min.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+    - https://cdn.min.jsdelivr.net/gh/MiniValine/tieba@latest
+    - https://cdn.min.jsdelivr.net/gh/MiniValine/twemoji@latest
+    - https://cdn.min.jsdelivr.net/gh/MiniValine/weibo@latest
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
@@ -415,49 +415,49 @@ baiduPush: true
 # 注意，将".min"添加到任何 JS/CSS 文件，如果一个不存在， jsd将为你生成它
 libs:
   css:
-    matery: /css/matery.css
-    mycss: /css/my.css
-    fontAwesome: /libs/awesome/css/all.css # V5.11.1
-    materialize: /libs/materialize/materialize.css # 1.0.0
-    aos: /libs/aos/aos.css
-    animate: /libs/animate/animate.css # V3.5.1
-    lightgallery: /libs/lightGallery/css/lightgallery.css # V1.6.11
-    aplayer: /libs/aplayer/APlayer.css
-    dplayer: /libs/dplayer/DPlayer.css
-    gitalk: /libs/gitalk/gitalk.css
-    jqcloud: /libs/jqcloud/jqcloud.css
-    tocbot: /libs/tocbot/tocbot.css
-    gallery: /css/gallery.css
-    jqueryfancybox: /libs/fancybox/jquery.fancybox.css
-    justifiedGallery: /libs/justifiedGallery/justifiedGallery.css
+    matery: /css/matery.min.css
+    mycss: /css/my.min.css
+    fontAwesome: /libs/awesome/css/all.min.css # V5.11.1
+    materialize: /libs/materialize/materialize.min.css # 1.0.0
+    aos: /libs/aos/aos.min.css
+    animate: /libs/animate/animate.min.css # V3.5.1
+    lightgallery: /libs/lightGallery/css/lightgallery.min.css # V1.6.11
+    aplayer: /libs/aplayer/APlayer.min.css
+    dplayer: /libs/dplayer/DPlayer.min.css
+    gitalk: /libs/gitalk/gitalk.min.css
+    jqcloud: /libs/jqcloud/jqcloud.min.css
+    tocbot: /libs/tocbot/tocbot.min.css
+    gallery: /css/gallery.min.css
+    jqueryfancybox: /libs/fancybox/jquery.fancybox.min.css
+    justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.css
   js:
-    matery: /js/matery.js
-    search: /js/search.js
-    jquery: /libs/jquery/jquery.js
-    materialize: /libs/materialize/materialize.js # 1.0.0
-    masonry: /libs/masonry/masonry.pkgd.js # v4.0.0
-    aos: /libs/aos/aos.js
-    scrollProgress: /libs/scrollprogress/scrollProgress.js
-    lightgallery: /libs/lightGallery/js/lightgallery-all.js # V1.6.11
-    clicklove: /libs/others/clicklove.js
-    busuanzi: /libs/others/busuanzi.pure.mini.js
-    aplayer: /libs/aplayer/APlayer.js
-    dplayer: /libs/dplayer/DPlayer.js
-    crypto: /libs/cryptojs/crypto-js.js
-    echarts: /libs/echarts/echarts.js
-    gitalk: /libs/gitalk/gitalk.js
-    valine: /libs/valine/Valine.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.js
-    jqcloud: /libs/jqcloud/jqcloud-1.0.4.js
-    tocbot: /libs/tocbot/tocbot.js
-    canvas_nest: /libs/background/canvas-nest.js
-    ribbon: /libs/background/ribbon.js
-    ribbonRefresh: /libs/background/ribbon-refresh.js
-    ribbon_dynamic: /libs/background/ribbon-dynamic.js
-    instantpage: /libs/instantpage/instantpage.js
-    gallery-encrypt: /js/gallery-encrypt.js
-    fancybox: /libs/fancybox/fancybox.js
-    justifiedGallery: /libs/justifiedGallery/justifiedGallery.js
+    matery: /js/matery.min.js
+    search: /js/search.min.js
+    jquery: /libs/jquery/jquery.min.js
+    materialize: /libs/materialize/materialize.min.js # 1.0.0
+    masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
+    aos: /libs/aos/aos.min.js
+    scrollProgress: /libs/scrollprogress/scrollProgress.min.js
+    lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
+    clicklove: /libs/others/clicklove.min.js
+    busuanzi: /libs/others/busuanzi.pure.mini.min.js
+    aplayer: /libs/aplayer/APlayer.min.js
+    dplayer: /libs/dplayer/DPlayer.min.js
+    crypto: /libs/cryptojs/crypto-js.min.js
+    echarts: /libs/echarts/echarts.min.js
+    gitalk: /libs/gitalk/gitalk.min.js
+    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    minivaline: //cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
+    jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
+    tocbot: /libs/tocbot/tocbot.min.js
+    canvas_nest: /libs/background/canvas-nest.min.js
+    ribbon: /libs/background/ribbon.min.js
+    ribbonRefresh: /libs/background/ribbon-refresh.min.js
+    ribbon_dynamic: /libs/background/ribbon-dynamic.min.js
+    instantpage: /libs/instantpage/instantpage.min.js
+    gallery-encrypt: /js/gallery-encrypt.min.js
+    fancybox: /libs/fancybox/fancybox.min.js
+    justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
@@ -587,23 +587,23 @@ icp:
 # CDN访问加速 
 # 第一次使用本功能，一定要先配置url，再`hexo cl && hexo g && hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
 # 如果必须要使用国内的coding或者gitee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
-# URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
+# URL配置规则（例子如下）： https://cdn.min.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
 # 如果想关闭此功能，将 url地址 注释或删除即可！
 #
 # 注：配置了此项，就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），本地调试的时候记得将 此项配置 注释或者删除掉
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
-# https://cdn.jsdelivr.net
-# https://purge.jsdelivr.net/
+# https://cdn.min.jsdelivr.net
+# https://purge.min.jsdelivr.net/
 
 jsDelivr:
-  url: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site
+  url: https://cdn.min.jsdelivr.net/gh/Tokisaki-Galaxy/res/site
 
 loadingPages:
   enable: true
 
 background:
   enable: true
-  url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.webp"
+  url: "https://cdn.min.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.webp"
 
 artitalk:
   enable: true
