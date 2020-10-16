@@ -426,6 +426,9 @@ libs:
     jqcloud: /libs/jqcloud/jqcloud.min.css
     tocbot: /libs/tocbot/tocbot.min.css
     mycss: /css/my.min.css
+    gallery: /css/gallery.css
+    jquery.fancybox: /libs/fancybox/jquery.fancybox.css
+    justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.css
   js:
     jquery: /libs/jquery/jquery.min.js
     materialize: /libs/materialize/materialize.min.js # 1.0.0
@@ -449,6 +452,9 @@ libs:
     ribbonRefresh: /libs/background/ribbon-refresh.min.js
     ribbon_dynamic: /libs/background/ribbon-dynamic.min.js
     instantpage: /libs/instantpage/instantpage.min.js
+    gallery-encrypt: /js/gallery-encrypt.js
+    fancybox: /libs/fancybox/fancybox.js
+    justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
