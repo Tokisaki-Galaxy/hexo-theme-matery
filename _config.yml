@@ -428,7 +428,7 @@ libs:
     jqcloud: /libs/jqcloud/jqcloud.css
     tocbot: /libs/tocbot/tocbot.css
     gallery: /css/gallery.css
-    jquery.fancybox: /libs/fancybox/jquery.fancybox.css
+    jqueryfancybox: /libs/fancybox/jquery.fancybox.css
     justifiedGallery: /libs/justifiedGallery/justifiedGallery.css
   js:
     matery: /js/matery.js
