@@ -417,6 +417,7 @@ libs:
   css:
     matery: /css/matery.min.css
     mycss: /css/my.min.css
+    gallery: /css/gallery.min.css
     fontAwesome: /libs/awesome/css/all.min.css # V5.11.1
     materialize: /libs/materialize/materialize.min.css # 1.0.0
     aos: /libs/aos/aos.min.css
@@ -427,7 +428,6 @@ libs:
     gitalk: /libs/gitalk/gitalk.min.css
     jqcloud: /libs/jqcloud/jqcloud.min.css
     tocbot: /libs/tocbot/tocbot.min.css
-    gallery: /css/gallery.min.css
     jqueryfancybox: /libs/fancybox/jquery.fancybox.min.css
     justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.css
   js:
@@ -596,14 +596,14 @@ icp:
 # https://purge.min.jsdelivr.net/
 
 jsDelivr:
-  url: https://cdn.min.jsdelivr.net/gh/Tokisaki-Galaxy/res/site
+  url: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site
 
 loadingPages:
   enable: true
 
 background:
   enable: true
-  url: "https://cdn.min.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.webp"
+  url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.webp"
 
 artitalk:
   enable: true
