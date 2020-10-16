@@ -35,16 +35,6 @@ menu:
         icon: fas fa-image
   About:
     icon: fas fa-user-circle
-    children:
-      - name: About
-        url: /about
-        icon: fas fa-user-circle
-      - name: Contact
-        url: /contact
-        icon: fas fa-comments
-      - name: Friends
-        url: /friends
-        icon: fas fa-address-book
 # Website start time.
 # 站点运行开始时间.
 time:
@@ -64,8 +54,8 @@ cover:
   autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
   duration: 120 # 切换延迟时间. Switching delay time.
   intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
-  useConfig: false # 是否使用配置文件, 在 _data/covers.min.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
-  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.min.json 移动到 my-blog/source/_data/下修改配置即可
+  useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
+  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
 
 # index page dream text,
 # 配置首页显示"梦想"的语句.
@@ -82,16 +72,16 @@ music:
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
-  autoHide: false    # hide automaticaly
-  server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
-  type: playlist    #require song, playlist, album, search, artist
-  id: 5129624977     #require	song id / playlist id / album id / search keyword
-  fixed: true      # 开启吸底模式
-  autoplay: false   # 是否自动播放
+  autoHide: false	# hide automaticaly
+  server: netease   # requiremusic platform: netease, tencent, kugou, xiami, baidu
+  type: playlist    # require song, playlist, album, search, artist
+  id: 5129624977	# require song id / playlist id / album id / search keyword
+  fixed: true		# 开启吸底模式
+  autoplay: false	# 是否自动播放
   theme: '#61aaf7'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'metadata'   # 预加载，可选值: 'none', '', 'auto'
+  loop: 'all'		# 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'random'        # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'metadata'     # 预加载，可选值: 'none', '', 'auto'
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: false  # 列表默认折叠
   hideLrc: true     # 隐藏歌词
@@ -117,8 +107,8 @@ video:
 recommend:
   enable: true
   showTitle: true
-  useConfig: false # 是否使用配置文件, 在 _data/recommends.min.json 下配置推荐文章, false则会走主题配置的 top 属性
-  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.min.json 移动到 my-blog/source/_data/下修改配置即可
+  useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
+  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
@@ -280,13 +270,12 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: false
-  owner: tokisaki-galaxy
-  repo: blogtalk
+  owner:
+  repo:
   oauth:
-    clientId: d2734ed7b7b6fef664e6
-    clientSecret: dd83a2d6f2bb2d52461f7e38c5850cb4a35e0e72
+    clientId:
+    clientSecret:
   admin:
-    - tokisaki-galaxy
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
