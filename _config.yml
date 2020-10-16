@@ -123,7 +123,7 @@ recommend:
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
 #favicon: /favicon.png
-favicon: https://cdn.min.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/favicon.png
+favicon: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/favicon.png
 logo: /medias/logo.png
 
 # The configuration of the second button in the home banner,
@@ -362,12 +362,12 @@ minivaline:
   # Expression Url.
   # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
   emoticonUrl:
-    - https://cdn.min.jsdelivr.net/npm/alus@latest
-    - https://cdn.min.jsdelivr.net/gh/MiniValine/qq@latest
-    - https://cdn.min.jsdelivr.net/gh/MiniValine/Bilibilis@latest
-    - https://cdn.min.jsdelivr.net/gh/MiniValine/tieba@latest
-    - https://cdn.min.jsdelivr.net/gh/MiniValine/twemoji@latest
-    - https://cdn.min.jsdelivr.net/gh/MiniValine/weibo@latest
+    - https://cdn.jsdelivr.net/npm/alus@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
