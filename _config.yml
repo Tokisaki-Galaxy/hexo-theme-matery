@@ -16,7 +16,6 @@ menu:
   # 二级菜单写法如下
 #  Medias:
   Interesting:
-    url: /
     icon: fas fa-list
     children:
       - name: Store
@@ -35,7 +34,6 @@ menu:
         url: /galleries
         icon: fas fa-image
   About:
-    url: /about
     icon: fas fa-user-circle
     children:
       - name: About
@@ -50,10 +48,10 @@ menu:
 # Website start time.
 # 站点运行开始时间.
 time:
-  enable: false
+  enable: true
   year: 2019 # 年份
-  month: 06 # 月份
-  date: 28 # 日期
+  month: 12 # 月份
+  date: 30 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
@@ -142,10 +140,10 @@ indexbtn:
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
   github:  https://github.com/tokisaki-galaxy
-  email: 1341281757@qq.com
+  email: tokisaki-galaxy@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1341281757
+  qq: tokisaki-galaxy@qq.com
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
@@ -178,7 +176,7 @@ reward:
 # minCharNumber: Approve copyright information by copying at least how many characters.
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
-  enable: false
+  enable: true
   minCharNumber: 200 # 至少复制多少个字符就追加版权信息.
   description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
 
