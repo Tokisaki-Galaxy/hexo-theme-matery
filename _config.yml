@@ -35,6 +35,7 @@ menu:
         icon: fas fa-image
   About:
     icon: fas fa-user-circle
+    url: /about
     children:
       - name: About
         url: /about
