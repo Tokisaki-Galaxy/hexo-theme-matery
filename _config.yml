@@ -340,7 +340,7 @@ minivaline:
   NoRecordIP: false # Do not record commenter IP.
   visitor: true # Article reading statistics.
   maxNest: 6 # Sub-comment maximum nesting depth.
-  pageSize: 6 # Pagination size.
+  pageSize: 10 # Pagination size.
   adminEmailMd5: 43d241fa2b27d31f5448cfdb47d618c0 # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
   tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
     - 管理员
