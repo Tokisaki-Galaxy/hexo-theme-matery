@@ -21,6 +21,9 @@ menu:
       - name: Store
         url: /store
         icon: fas fa-cloud
+      - name: Tools
+        url: /tools
+        icon: fas fa-wrench
       - name: Musics
         url: /musics
         icon: fas fa-music
