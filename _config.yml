@@ -147,7 +147,7 @@ socialLink:
   email: tokisaki-galaxy@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: tokisaki-galaxy@qq.com
+  qq: 1341281757
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
@@ -507,7 +507,7 @@ featureImages:
 # pay（付费转载 pay for reprinting）
 reprint:
   enable: true # whether enable reprint section 是否启用“转载规则限定模块”
-  default: cc_by
+  default: cc_by_nc_sa
 
 # DaoVoice online contact
 daovoice:
