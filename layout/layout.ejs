@@ -42,7 +42,6 @@
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.aos) %>"></script>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.scrollProgress) %>"></script>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.lightgallery) %>"></script>
-    
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.matery) %>"></script>
 
     <%- partial('_partial/baidu-analytics') %>
@@ -105,6 +104,12 @@
     </script>
     <% } %>
 
+    <!--腾讯兔小巢-->
+    <% if (theme.tuxiaochao.enable) { %>
+        <div style="position:fixed;bottom:125px;right:16px;cursor: pointer;">
+            <a title="兔小巢" href="https://support.qq.com/products/<%- theme.tuxiaochao.productId %>"><i class="fa fa-comments fa-3x"  aria-hidden="true"></i></a>
+        </div>
+    <%}%>
     <% if (theme.canvas_nest.enable) { %>
     <script type="text/javascript" color="<%- theme.canvas_nest.color %>"
         pointColor="<%- theme.canvas_nest.pointColor %>" opacity='<%- theme.canvas_nest.opacity %>'
