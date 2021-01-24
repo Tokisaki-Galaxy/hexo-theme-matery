@@ -1,6 +1,6 @@
 # hexo-theme-matery
 
-[![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
+[![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
 
 [🇨🇳中文说明](README_CN.md) | [国内访问示例(http://blinkfox.com)](http://blinkfox.com) | [Github Deploy Demo(https://blinkfox.github.io)](https://blinkfox.github.io)
 
@@ -10,9 +10,9 @@
 
 - Simple and beautiful, and post is Beautiful and readable.
 - [Material Design](https://material.io/).
-- Responsive design,which can be displayed well on desktop, tablet, mobile phone, etc.
-- Home page carousel posts and changing 'banner' picture dynamically everday.
-- Blog posts list with waterflow(There will be 24 images if the articl dosn't have  featured pictures).
+- Responsive design, which can be displayed well on desktop, tablet, mobile phone, etc.
+- Home page carousel posts and changing 'banner' picture dynamically everyday.
+- Blog posts list with waterflow (There will be 24 images if the article doesn't have featured pictures).
 - Archive page with timeline.
 - Tags page of the **word cloud** and categories page of the **radar chart**
 - Rich 'About' page (including about me, posts charts, my projects, my skills, gallery etc.)
@@ -39,9 +39,12 @@ Thanks to these contributors, without whom, hexo-theme-matery won't be this perf
 
 ## Download
 
-You should have a [Hexo](https://hexo.io/zh-cn/) blog when you see it here.If not,try to use the hexo and [Markdown](https://www.appinn.com/markdown/) to write your blog and post.
-Click [here](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) to download master branch of the last stable version of the code.After decompressing,copy the `hexo-theme-matery` folder
-to your `themes` folder of your Hexo.Of course,you can uer `Git clone` to download in your `themes` folder.
+hexo-theme-matery **recommend you to use Hexo 5.0.0 and above**. If you already have your own [Hexo](https://hexo.io/zh-cn/) blog, I suggest you upgrade Hexo to the latest stable version.
+
+Click [here](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) to download master branch of the last stable version of the code.After decompressing, copy the `hexo-theme-matery` folder
+to your `themes` folder of your Hexo blog project.
+
+Of course, you can use `git clone` to download in your `themes` folder.
 
 ```bash
 git clone https://github.com/blinkfox/hexo-theme-matery.git
@@ -55,19 +58,19 @@ Modify the value of `theme` in `_config.yml` of Hexo's root folder: `theme: hexo
 
 #### Suggestions for other changes to the `_config.yml`:
 
-- Please modify the value of `url` of `_config.yml` to your website's main `URL` (eg `http://xxx.github.io`).
-- Recommended modify the value of the two `per_page` to be a multiple of `6`, such as: `12`, `18`, etc. so that the posts list can be displayed well under each screen.
+- Please modify the value of `url` of `_config.yml` to your website's main `URL` (e.g. `http://xxx.github.io`).
+- It's recommended to modify the value of the two `per_page` to be a multiple of `6`, such as: `12`, `18`, etc. so that the posts list can be displayed well under each screen.
 - If you are a Chinese user, it is recommended to change the value of `language` to `zh-CN`.
 
 ### new categories page
 
-`categories` page is to show all of categories. If the `source` directory of your blog doesn't have `categories/index.md` file, you need to new one like this:
+`categories` page is to show all of categories. If the `source` directory of your blog doesn't have `categories/index.md` file, you need to create a new one like this:
 
 ```bash
 hexo new page "categories"
 ```
 
-to edit your new page files`/source/categories/index.md`, you need somethings as follows:
+when editing your new page file `/source/categories/index.md`, you need something like:
 
 ```yaml
 ---
@@ -80,13 +83,13 @@ layout: "categories"
 
 ### new tags page
 
-`tags` page is to show all of tags. If the `source` directory of your blog doesn't have `tags/index.md` file,you need to new one like this:
+`tags` page is to show all of tags. If the `source` directory of your blog doesn't have `tags/index.md` file, you need to create a new one like this:
 
 ```bash
 hexo new page "tags"
 ```
 
-to edit your new page files`/source/tags/index.md`, you need somethings as follows:
+and put the following in your new page file `/source/tags/index.md`,
 
 ```yaml
 ---
@@ -99,13 +102,13 @@ layout: "tags"
 
 ### new about page
 
-`about` page is to show my blog and myself information. If the `source` directory of your blog doesn't have `about/index.md` file, you need to new one like this:
+`about` page is to show my blog and myself information. If the `source` directory of your blog doesn't have `about/index.md` file, create a new one like this:
 
 ```bash
 hexo new page "about"
 ```
 
-to edit your new page files`/source/about/index.md`, you need somethings as follows:
+and edit your new page file `/source/about/index.md` to include:
 
 ```yaml
 ---
@@ -124,7 +127,7 @@ layout: "about"
 hexo new page "contact"
 ```
 
-to edit your new page files`/source/contact/index.md`, you need somethings as follows:
+when editing your new page file `/source/contact/index.md`, include the following at the beginning:
 
 ```yaml
 ---
@@ -135,7 +138,7 @@ layout: "contact"
 ---
 ```
 
-> **Note**：The message board depends on a third-party comment system, please **activate** your comment system to be effective. And in the theme `_config.yml` file, the "**menu**" of the `19` to `21` line is configured, and the comment about the message board cloud be canceled.
+> **Note**：The message board depends on a third-party comment system, please **activate** your comment system to be effective. And in the theme's `_config.yml` file, the "**menu**" of the `19` to `21` line is configured, and the comment about the message board could be canceled.
 
 ### new friends link page (Optional)
 
@@ -156,7 +159,7 @@ layout: "friends"
 ---
 ```
 
-Also, create a new `_data` directory in your blog's `source` directory and a new `friends.json` file in the `_data` directory. The contents of the file are as follows:
+Also, create a new `_data` directory in your blog's `source` directory and a new `friends.json` file in the `_data` directory. The contents of the file is as follows:
 
 ```json
 [{
@@ -181,9 +184,13 @@ Also, create a new `_data` directory in your blog's `source` directory and a new
 ```
 ### new 404 page
 
-If the `source` directory of your blog doesn't have `404.md` file, you need to new one
+If the `source` directory of your blog doesn't have `404.md` file, you need create a new one using:
 
-to edit your new page files`/source/404.md`, you need somethings as follows:
+```bash
+hexo new page 404
+```
+
+when editing your new page file `/source/404/index.md`, you need something as follows:
 
 ```yaml
 ---
@@ -199,7 +206,7 @@ description: "Cannot find the page you want :("
 
 #### Configure the name of the basic menu navigation, path url and icon icon.
 
-1. The menu navigation name can be Chinese or English (eg: `Index` or `Home`)
+1. The menu navigation name can be Chinese or English (e.g.: `Index` or `主页`)
 2. Icon icon can be found in [Font Awesome](https://fontawesome.com/icons)
 
 ```yaml
@@ -228,7 +235,7 @@ menu:
 
 If you need a secondary menu, you can do the following on the basis of the original basic menu navigation.
 
-1. Add the `children` keyword to the first level menu that needs to add a secondary menu (eg: add `children` under the `About` menu)
+1. Add the `children` keyword to the first level menu that needs to add a secondary menu (e.g.: add `children` under the `About` menu)
 2. Create a secondary menu name, path url and icon icon under `children`.
 3. Note that each secondary menu module must be preceded by `-`.
 4. Note the indentation format.
@@ -256,8 +263,8 @@ menu:
   Medias:
     icon: fas fa-list
     children:
-      - name: Musics
-        url: /musics
+      - name: Music
+        url: /music
         icon: fas fa-music
       - name: Movies
         url: /movies
@@ -270,36 +277,40 @@ menu:
         icon: fas fa-image
 ```
 
-### Code highlight
+### Code Highlight
 
-Hexo theme uses Hexo's plugin [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) to show the code highlight instead of its own theme.The Installation commands are as follows:
+Starting from Hexo 5.0.0 version, it comes with support for `prismjs` code syntax highlighting, and hexo-theme-matery has been modified to support it.
 
-```bash
-npm i -S hexo-prism-plugin
-```
+If the plugin of `hexo-prism-plugin` has been installed in your blog, then you need to execute `npm uninstall hexo-prism-plugin` to uninstall it, otherwise there will be `&#123;`, `&#125;` escape characters in the code block of the post.
 
-Then,modify the value of `highlight.enable` to `false` in `_config.yml` file of Hexo root folder, and add the configuration of `prism` plugin as follows:
+Then, modify the value of `highlight.enable` to `false` in `_config.yml` at the root your hexo project, and set the value of `prismjs.enable` to `true`, the main configuration is as follows:
 
 ```yaml
 highlight:
   enable: false
-
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
-  custom_css:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 ```
+
+The default `prismjs` theme in the hexo-theme-matery is `Tomorrow Night`, if you want to customize your own theme, you can go to [prismjs download page](https://prismjs.com/download.html) to download yourself favorite theme `css` file, then name this css theme file `prism.css`, replace the `source/libs/prism/prism.css` file in the theme folder of `hexo-theme-matery`.
 
 ### Search
 
-The theme uses the Hexo plugin [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) to search the content,and the Installation commands are as follows:
+The theme uses the Hexo plugin [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) to search the content, and the Installation command is as follows:
 
 ```bash
 npm install hexo-generator-search --save
 ```
 
-Add configuration of `_config.yml` file in Hexo root folder as follows：
+Add the following content in `_config.yml` at the root of your hexo project:
 
 ```yaml
 search:
@@ -307,11 +318,11 @@ search:
   field: post
 ```
 
-### Translate Chinese Link to Pinyin (Recommend)
+### Translate Chinese Link to Pinyin (Recommended)
 
-Defualt permalinks of Hexo will include Chinese if your atrticle's title is Chinese. But it's adverse to `SEO`, and `gitment` comments don't suport Chinese Link as well. We can use the [hexo-permalink-pinyin](https://github.com/viko16/hexo-permalink-pinyin) of Hexo plugin to generate permalinks of Chinese Pinyin when generating posts.
+Default permalinks of Hexo will include Chinese if your article's title is Chinese. But it's adverse to `SEO`, and `gitment` comments don't support Chinese Link as well. We can use the [hexo-permalink-pinyin](https://github.com/viko16/hexo-permalink-pinyin) Hexo plugin to generate permalinks in Chinese Pinyin when generating posts.
 
-Installation commands are as follows：
+Installation command is as follows：
 
 ```bash
 npm i hexo-permalink-pinyin --save
@@ -325,13 +336,13 @@ permalink_pinyin:
   separator: '-' # default: '-'
 ```
 
-> **Note**: [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) can genarate non-Chinese link in addtion to this plugin.
+> **Note**: [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) can generate non-Chinese link in addition to this plugin.
 
-### Post word count statistics plugin (Recommend)
+### Post word count statistics plugin (Recommended)
 
 If you want to display the post word count and reading time information in the post detail page, you can install the [hexo-wordcount](https://github.com/willin/hexo-wordcount) plugin.
 
-Installation commands are as follows：
+Installation command is as follows：
 
 ```bash
 npm i --save hexo-wordcount
@@ -351,13 +362,13 @@ postInfo:
 
 ### Add emoji support (Optional)
 
-This theme adds support for the `emoji` emoticon, using the Hexo plugin for [hexo-filter-github-emojis](https://npm.taobao.org/package/hexo-filter-github-emojis) to support the generation of the `emoji` expression, the corresponding `markdown emoji` syntax (`::`, for example: `:smile:`) is converted into a `emoji` expression that jumps. The installation command is as follows:
+This theme adds support for the `emoji` emoticon, using the Hexo plugin [hexo-filter-github-emojis](https://npm.taobao.org/package/hexo-filter-github-emojis) to support the generation of the `emoji` expression. The corresponding `markdown emoji` syntax (`::`, for example: `:smile:`) is converted into a `emoji` expression that jumps. The installation command is as follows:
 
 ```bash
 npm install hexo-filter-github-emojis --save
 ```
 
-Add configuration of `_config.yml` file in Hexo root folder as follows：
+Add the following configuration into the `_config.yml` file in your hexo project root folder：
 
 ```yaml
 githubEmojis:
@@ -372,13 +383,13 @@ Execute `hexo clean && hexo g` to regenerate the blog file, and then you can see
 
 ### Add RSS feed support (Optional)
 
-The theme uses the Hexo plugin [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) to support `RSS` feed , and the Installation commands are as follows:
+The theme uses the Hexo plugin [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) to support `RSS` feed , and the Installation command is as follows:
 
 ```bash
 npm install hexo-generator-feed --save
 ```
 
-Add configuration of `_config.yml` file in Hexo root folder as follows：
+Add the following configuration into the `_config.yml` file in your hexo project root folder：
 
 ```yaml
 feed:
@@ -404,11 +415,11 @@ Go to the official website of [Tidio](https://www.tidio.com/), register and get 
 
 ### Modify website footer
 
-Website footer may need to be customized, and it is not convenient to make configuration information, So need to modify and process it by yourself. The changes are in the `/layout/_partial/footer.ejs` file, including the site, the theme used, the amount of traffic and so on.
+Website footer may need to be customized, and it is not convenient to make it part of the configuration, So you need to modify and process it by yourself. Changes could be made in the theme's `/layout/_partial/footer.ejs` file, including the site information, the theme used, the amount of traffic and so on.
 
 ### Modify social links
 
-In the theme `_config.yml` file, the configurations of `QQ`, `GitHub` and mailbox and more are supported by default. In the `/layout/_partial/social-link.ejs` file of the theme, you can add or modify the social link address as you need. To add a link, please refer to the following code:
+In the theme `_config.yml` file, the configurations of `QQ`, `GitHub` and mailbox and more are supported by default. In the `/layout/_partial/social-link.ejs` file of the theme, you can add or modify social link addresses as you need. To add a link, please refer to the following code:
 
 ```html
 <% if (theme.socialLink.github) { %>
@@ -418,7 +429,7 @@ In the theme `_config.yml` file, the configurations of `QQ`, `GitHub` and mailbo
 <% } %>
 ```
 
-You can search social icon such as `fab fa-github` in [Font Awesome](https://fontawesome.com/icons). There are common social icons you can reference:
+You can search social icons such as `fab fa-github` in [Font Awesome](https://fontawesome.com/icons). There are common social icons you can reference:
 
 - Facebook: `fab fa-facebook`
 - Twitter: `fab fa-twitter`
@@ -432,14 +443,14 @@ You can search social icon such as `fab fa-github` in [Font Awesome](https://fon
 - QQ: `fab fa-qq`
 - Zhihu: `fab fa-zhihu`
 
-> **Note**: The version of `Font Awesome` is `5.11.0`.
+> **Note**: The version of `Font Awesome` used by matery is `5.11.0`.
 
 ### Configure music player (optional)
 
-To support music playing, you just need activate the `_config.yml` file of music playing configuration.
+To support music playing, you just need to activate music playing configuration in the theme's `_config.yml` file.
 
 ```yaml
-# Whether to display the musics
+# Whether to display the music
 music:
   enable: true
   title: 		   # non-fixed mode works
@@ -458,14 +469,10 @@ music:
   listFolded: true  # indicate whether list should folded at first
 ```
 
->`server` values :  `netease` (NetEase  cloud music) , `tencent` (QQMusic) , `kugou` (KuGouMusic) , `xiami` 
->
->(XiamMusic) , `baidu` (BaiduMusic)
->
->`type` values : `song`  ,   `playlist` , `album` , `search` , `artist` 
->
->For example to get the `id`:open NetEase cloud music in the browser , click the playlist of my love , there will a string of 
->
+>`server` values :  `netease` (NetEase  cloud music) , `tencent` (QQMusic) , `kugou` (KuGouMusic) , `xiami`  
+>(XiamMusic) , `baidu` (BaiduMusic)  
+>`type` values : `song`  ,   `playlist` , `album` , `search` , `artist`  
+>For example to get the `id`:open NetEase cloud music in the browser , click the playlist of my love , there will a string of  
 >numbers  in the browser\`s address bar  ,  the `playlist`\`s `id` just is the string of numbers.
 
 
@@ -481,7 +488,7 @@ Everything in the Front-matter option is **not required**. But I still recommend
 | title      | Markdown's file title | Post title, it is highly recommended to fill in this option |
 | date       | Date and time when the file created | Publish time, it is highly recommended to fill in this option, and it is best to ensure that it is globally unique |
 | author     | `author` in root `_config.yml` | Post author                                    |
-| img        | a value in `featureImages`  | Post feature image，For exampl: `http://xxx.com/xxx.jpg` |
+| img        | a value in `featureImages`  | Post feature image，For example: `http://xxx.com/xxx.jpg` |
 | top        | `true`                      | Recommended post (whether the post is topped), if the `top` value is `true`, it will be recommended as a homepage post. |
 | cover      | `false`                     | The `v1.0.2` version is added to indicate whether the post needs to be added to the homepage carousel cover. |
 | coverImg   | null                        | The new version of `v1.0.2` indicates that the post needs to display the image path on the cover of the homepage. If not, the default image of the post is used by default. |
@@ -495,7 +502,7 @@ Everything in the Front-matter option is **not required**. But I still recommend
 | reprintPolicy       | cc_by              | Post reprint policy, value could be one of cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint and pay |
 
 > **Note**: 
-> 1. post's featured piature will take remainder if not writing the `img` property,and chose the featured picture of theme to let all of post's picture **have their own characteristics**.
+> 1. post's featured picture will take remainder if not writing the `img` property, and choose the featured picture of theme to let all of post's picture **have their own characteristics**.
 > 2. The value of `date` should try to ensure that each article is unique, because `Gitalk` and `Gitment` recognize `id` in this topic are uniquely identified by the value of `date`.
 > 3. If you want to set the ability to read the verification password for the article, you should not only set the value of the password with SHA256 encryption in Front-matter, but also activate the configuration in the theme `_config.yml`.
 > 4. you can define reprint policy for a single article in the front-matter of the specific md file using this key: reprintPolicy
@@ -568,11 +575,12 @@ You can modify some custom modification in `_config.yml` as follows:
 - My Gallery
 - Gitalk, Gitment, Valine and Disqus
 - [Busuanzi Statistics](http://busuanzi.ibruce.info/) And Google Analytics
-- The map of default featured pictures. The theme will take remainde according to `hashcode` of post title if the post dose not set featured piactures.
+- The map of default featured pictures. The theme will take remainder according to `hashcode` of the post title if the post does not set featured pictures.
 
-**I think everyone should have their own style and feature of blog**。if you are not satisfiled with functions and theme color,you can modify by yourself,and more free functions and deatil need to be modified by modify source code when it is hard to be finished in `_config.yml`.
+**I think everyone should have their own style and feature for their blogs**. If you are not satisfied with the theme's functions and color, you can modify them by yourself,
+and more free functions and details could be changed by modifying source code when it is hard to achieve by modifying the theme's `_config.yml`.
 
-### modeing theme color
+### Customizing theme color
 
 Search `.bg-color` to modify background color in `/source/css/matery.css` in theme file：
 
@@ -593,89 +601,14 @@ Search `.bg-color` to modify background color in `/source/css/matery.css` in the
 
 ### Modify banner picture and post's featured pictures
 
-You can change `banner` pictures in `/source/medias/banner` as you like .Theme code can switch  dynamically every day and just need 7 pictures.If you master `JavaScript`,you can change it to your favorite swithing logic,such as Random switching.The code of switching `banner`is in `<script></script>` of `/layout/_partial/bg-cover-content.ejs`file.
+You can change `banner` pictures in `/source/medias/banner` as you like .Theme code can switch dynamically every day and just need 7 pictures.If you master `JavaScript`, you can change it to your favorite switching logic, such as Random switching. The code for switching `banner`is in `<script></script>` of `/layout/_partial/bg-cover-content.ejs`file.
 
 ```javascript
 $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 ```
 
-There are 24 featured pictures in `/source/medias/featureimages`,you can add or delete,and modify it in `_config.yml` at the sametime.
+There are 24 featured pictures in `/source/medias/featureimages`, you can add or delete some, and modify corresponding settings in the theme's `_config.yml`.
 
 ## Changelog
 
-- v1.3.2
-  - Added support for traditional characters;
-  - Added 404 page;
-  - Fixed other minor issues；
-- v1.3.1
-  - Added `kbd` style;
-  - Fixed an issue with incorrect links in the word cloud when deploying subdirectories;
-  - Removed vertical lines in TOC;
-  - Fixed the problem that the `tooltip` in the home icon is not displayed;
-  - Fixed the issue that switching banners every day does not take effect when generating static files;
-  - Updated some configurations in `miniValine`;
-- v1.3.0
-  - new supporting subdirectory deployment（eg: `Gitee`）；
-  - new `MiniValine` comment system；
-  - new `jsdelivr` supported；
-  - Fixed many bugs；
-- v1.2.2
-  - Add the function of customizing post `keywords`;
-  - Add the function and configuration of static ribbon click switch;
-  - Set the word count, ribbon and site running time as `false` by default;
-  - Modify the meta attribute of the post's `description` to read the post's `summary` attribute first;
-  - Modified HTML tag of article title from `div` to` h1` title;
-  - Fixed the problem of incorrect footer `year` display;
-  - Removed redundant `setTimeout` js code from site runtime;
-- v1.2.1
-  - Added TOC's expand directory level settings and scroll bar function to prevent directory overflow when there are many directories;
-  - Modified the display mode of the homepage to the previous mode;
-  - Fixed the problem that the home button has no border;
-  - Fixed an issue where the homepage card was still generated when the music and bottom suction modes, videos, recommended articles, etc. were not activated;
-  - Fixed the problem that wordCount plugin is not installed, and modified some configurations;
-  - Fixed the issue that the page does not display music when there are single quotes in the JSON configuration of the music;
-  - Fixed the problem of tag cloud link failure under Hexo4.0;
-- v1.2.0
-  - Added online chat function of [DaoVoice](http://www.daovoice.io/) and [Tidio](https://www.tidio.com/);
-  - Added the ability to have two levels of menus;
-  - Added a subtitle for typing effects;
-  - Added the ability to preload web content;
-  - Added the configuration function of the home banner whether to switch daily;
-  - Added the ability to display ICP filing information, which is not enabled by default;
-  - Added configuration for Baidu analysis;
-  - Added language display, one-click copy, display line number and other functions of the code block;
-  - Added the ability to customize the configuration of the home page car map and recommended articles;
-  - Added article page to display update date;
-  - Added an icon for the reload rule;
-  - Modified the layout and display of the sharing;
-  - Upgraded and updated versions of some dependent libraries;
-  - other details to modify and optimize;
-- v1.1.0
-  - Added support for `emoji`;
-  - Added site run time statistics and configuration;
-  - Added the function of message board, it is not enabled by default;
-  - Added `Twitter`, `Facebook`, and `zhihu` social links;
-  - Updated the version of `Valine` to the latest version;
-  - modification of other minor details;
-- v1.0.4
-  - Added the ability to customize the reprint rules for each post;
-  - Fix the problem that the custom summary of the previous page and the next page does not display;
-  - Fixed the problem that the link of the friends link was misplaced and changed to the layout of the waterfall stream;
-  - Other minor bugs fixes;
-- v1.0.3
-  - Added `TOC` expansion, shrink button and related configuration, this button is displayed by default;
-- v1.0.2
-  - Upgraded the [Materialize](https://materializecss.com/) framework version to `1.0.0`, refactoring and modifying some files or problems during the upgrade process;
-  - Added a full-screen carousel effect on the front cover of the home page to set more important posts to the home page carousel;
-  - Fix the first button on the front page is Chinese;
-  - Fixed an issue where clicking search input on the iPhone to get focus;
-  - Fixed an issue where the page was enlarged after the input box on the iPhone got focus;
-  - Fix some posts or UI display issues;
-- v1.0.1
-  - Adjust the file request path of `css` and `js` in the `_config.yml` of the theme, so that you can quickly configure their own CDN;
-  - Whether the new code is configurable or not, the default is a line break;
-  - The `TOC` function is activated by default, and the `Front-matter` configuration option for `TOC` is turned off for a post;
-  - Fixed an issue where the highlighted directory option was inaccurate when scrolling through the post;
-  - Remove the search box under `IOS` to automatically get the focus attribute, preventing the view from moving up after automatically getting the focus;
-- v1.0.0
-  - Added all the basic features;
+See [CHANGELOG.md](https://github.com/blinkfox/hexo-theme-matery/blob/master/README.md)

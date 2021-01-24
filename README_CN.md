@@ -1,6 +1,6 @@
 # hexo-theme-matery
 
-[![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
+[![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
 
 [🇺🇸English Document](README.md) | [国内访问示例 (http://blinkfox.com)](http://blinkfox.com) | [Github 部署演示示例 (https://blinkfox.github.io)](https://blinkfox.github.io) | QQ 交流群1（已满）: [`926552981`](https://jq.qq.com/?_wv=1027&k=5zMDYHT) | QQ 交流群2（推荐）: [`971887688`](https://jq.qq.com/?_wv=1027&k=53q2Ayp)
 
@@ -39,11 +39,11 @@
 
 ## 下载
 
-当你看到这里的时候，应该已经有一个自己的 [Hexo](https://hexo.io/zh-cn/) 博客了。如果还没有的话，不妨使用 Hexo 和 [Markdown](https://www.appinn.com/markdown/) 来写博客和文章。
+本主题**推荐你使用 Hexo 5.0.0 及以上的版本**。如果，你已经有一个自己的 [Hexo](https://hexo.io/zh-cn/) 博客了，建议你将 Hexo 升级到最新稳定的版本。
 
 点击 [这里](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) 下载 `master` 分支的最新稳定版的代码，解压缩后，将 `hexo-theme-matery` 的文件夹复制到你 Hexo 的 `themes` 文件夹中即可。
 
-当然你也可以在你的 `themes` 文件夹下使用 `Git clone` 命令来下载:
+当然你也可以在你的 `themes` 文件夹下使用 `git clone` 命令来下载:
 
 ```bash
 git clone https://github.com/blinkfox/hexo-theme-matery.git
@@ -185,7 +185,11 @@ layout: "friends"
 
 如果在你的博客 `source` 目录下还没有 `404.md` 文件，那么你就需要新建一个
 
-编辑你刚刚新建的页面文件 `/source/404.md`，至少需要以下内容：
+```bash
+hexo new page 404
+```
+
+编辑你刚刚新建的页面文件 `/source/404/index.md`，至少需要以下内容：
 
 ```yaml
 ---
@@ -227,11 +231,13 @@ menu:
 ```
 
 #### 二级菜单配置方法
-如果你需要二级菜单则可以在原基本菜单导航的基础上如下操作     
-1.在需要添加二级菜单的一级菜单下添加`children`关键字(如:`About`菜单下添加`children`)     
-2.在`children`下创建二级菜单的 名称name,路径url和图标icon.      
-3.注意每个二级菜单模块前要加 `-`.     
-4.注意缩进格式  
+
+如果你需要二级菜单则可以在原基本菜单导航的基础上如下操作
+     
+1. 在需要添加二级菜单的一级菜单下添加`children`关键字(如:`About`菜单下添加`children`)     
+2. 在`children`下创建二级菜单的 名称name,路径url和图标icon.      
+3. 注意每个二级菜单模块前要加 `-`.     
+4. 注意缩进格式  
 
 ```yaml
 menu:
@@ -256,8 +262,8 @@ menu:
   Medias:
     icon: fas fa-list
     children:
-      - name: Musics
-        url: /musics
+      - name: Music
+        url: /music
         icon: fas fa-music
       - name: Movies
         url: /movies
@@ -270,28 +276,31 @@ menu:
         icon: fas fa-image
 ```
 
-执行 `hexo clean && hexo g` 重新生成博客文件，然后就可以在文章中对应位置看到你用`emoji`语法写的表情了。
 
 ### 代码高亮
 
-由于 Hexo 自带的代码高亮主题显示不好看，所以主题中使用到了 [hexo-prism-plugin](https://github.com/ele828/hexo-prism-plugin) 的 Hexo 插件来做代码高亮，安装命令如下：
+从 Hexo5.0 版本开始自带了 `prismjs` 代码语法高亮的支持，本主题对此进行了改造支持。
 
-```bash
-npm i -S hexo-prism-plugin
-```
+如果你的博客中曾经安装过 `hexo-prism-plugin` 的插件，那么你须要执行 `npm uninstall hexo-prism-plugin` 来卸载掉它，否则生成的代码中会有 `&#123;` 和 `&#125;` 的转义字符。
 
-然后，修改 Hexo 根目录下 `_config.yml` 文件中 `highlight.enable` 的值为 `false`，并新增 `prism` 插件相关的配置，主要配置如下：
+然后，修改 Hexo 根目录下 `_config.yml` 文件中 `highlight.enable` 的值为 `false`，并将 `prismjs.enable` 的值设置为 `true`，主要配置如下：
 
 ```yaml
 highlight:
   enable: false
-
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
-  custom_css:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 ```
+
+主题中默认的 `prismjs` 主题是 `Tomorrow Night`，如果你想定制自己的主题，可以前往 [prismjs 下载页面](https://prismjs.com/download.html) 定制下载自己喜欢的主题 `css` 文件，然后将此 css 主题文件取名为 `prism.css`，替换掉 `hexo-theme-matery` 主题文件夹中的 `source/libs/prism/prism.css` 文件即可。
 
 ### 搜索
 
@@ -369,6 +378,7 @@ githubEmojis:
   styles:
   customEmojis:
 ```
+执行 `hexo clean && hexo g` 重新生成博客文件，然后就可以在文章中对应位置看到你用`emoji`语法写的表情了。
 
 ### 添加 RSS 订阅支持（可选的）
 
@@ -499,7 +509,7 @@ music:
 | reprintPolicy | cc_by                    | 文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个 |
 
 > **注意**:
-> 1. 如果 `img` 属性不填写的话，文章特色图会根据文章标题的 `hashcode` 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章都的特色图**各有特色**。
+> 1. 如果 `img` 属性不填写的话，文章特色图会根据文章标题的 `hashcode` 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章的特色图**各有特色**。
 > 2. `date` 的值尽量保证每篇文章是唯一的，因为本主题中 `Gitalk` 和 `Gitment` 识别 `id` 是通过 `date` 的值来作为唯一标识的。
 > 3. 如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 `_config.yml` 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：[开源中国在线工具](http://tool.oschina.net/encrypt?type=2)、[chahuo](http://encode.chahuo.com/)、[站长工具](http://tool.chinaz.com/tools/hash.aspx)。
 > 4. 您可以在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则
@@ -603,81 +613,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 在 `/source/medias/featureimages` 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 `_config.yml` 做同步修改。
 
-## 版本记录
+## 版本变更记录
 
-- v1.3.2
-  - 新增了繁体字的支持；
-  - 新增了 404 页面；
-  - 其他小问题修改；
-- v1.3.1
-  - 新增了 `kbd` 样式；
-  - 修复了子目录部署时词云中链接有误的问题；
-  - 移除了 TOC 中的竖线；
-  - 修复了首页 icon 图标中的 tooltip 不显示的问题；
-  - 修复生成静态文件时，每天切换 banner 不生效的问题；
-  - 更新了 `miniValine` 中的一些配置；
-- v1.3.0
-  - 新增了支持子目录部署的功能（如：`Gitee`）；
-  - 新增了 `MiniValine` 评论系统；
-  - 新增了 `jsdelivr` 的支持；
-  - 修复了诸多发现的 bug；
-- v1.2.2
-  - 新增了自定义文章 `keywords` 的功能；
-  - 新增静态彩带点击切换的功能和配置；
-  - 将文章字数统计、彩带和站点运行时间等功能默认设置为 `false`；
-  - 修改了文章的 `description` 的 meta 属性优先读取文章的 `summary` 属性；
-  - 修改了文章标题的 HTML 标签，从 `div` 改成了 `h1` 标题；
-  - 修改了页脚年份显示不正确的问题；
-  - 去掉了站点运行时间中多余的 `setTimeout` 代码；
-- v1.2.1
-  - 新增了 TOC 的展开目录层级设置和滚动条功能，防止目录较多的时候目录溢出；
-  - 修改了首页的展示方式为以前的模式；
-  - 修复首页按钮没有边框的问题；
-  - 修复了音乐及吸底模式、视频、推荐文章等不激活时仍然生成首页卡片的问题；
-  - 修复 wordCount 插件未安装的问题，修改了部分配置；
-  - 修复音乐的 JSON 配置中有单引号的情况页面不显示的音乐的问题
-  - 修复标签云在Hexo4.0下链接失效的问题；
-- v1.2.0
-  - 新增了 [DaoVoice](http://www.daovoice.io/)、[Tidio](https://www.tidio.com/) 的在线聊天功能；
-  - 新增了两级菜单的功能；
-  - 新增了打字效果的副标题；
-  - 新增了网页内容预加载的功能；
-  - 新增了首页 banner 是否每日切换的配置功能；
-  - 新增了显示 ICP 备案信息的功能，默认未开启；
-  - 新增了百度分析的配置；
-  - 新增了代码块的语言显示、一键复制、显示行号等功能；
-  - 新增了首页轮播图和推荐文章可自定义配置的功能；
-  - 新增了文章页面显示更新日期；
-  - 新增了转载规则的图标；
-  - 修改了分享的布局和显示方式；
-  - 升级更新了部分依赖库的版本；
-  - 其他细节修改和优化；
-- v1.1.0
-  - 新增了 `emoji` 的支持；
-  - 新增了站点运行时间统计及配置；
-  - 新增了留言板的功能,默认未开启；
-  - 新增了 `Twitter`、`Facebook`、知乎的社交链接；
-  - 更新了 `Valine` 的版本为最新版；
-  - 其他小细节的修改；
-- v1.0.4
-  - 新增了能为每篇文章都自定义转载规则的功能；
-  - 修复上一页、下一页的自定义 `summary` 不显示的问题；
-  - 修复了友情链接显示错位的问题，改为了瀑布流的布局方式；
-  - 其他小细节 bug 的修改；
-- v1.0.3
-  - 新增了`TOC`展开、收缩的按钮和相关配置，默认显示此按钮；
-- v1.0.2
-  - 升级了 [Materialize](https://materializecss.com/) 框架版本为`1.0.0`，重构和修改了升级过程中的部分文件或问题；
-  - 新增了首页封面的全屏轮播特效，可以将更重要的文章设置到首页轮播中；
-  - 修复首页第一个按钮是中文的问题
-  - 修复了 iPhone 上点击搜索输入获取焦点的问题；
-  - 修复了 iPhone 上输入框获取焦点后页面放大的问题；
-  - 修复一些文章或 UI 显示问题；
-- v1.0.1
-  - 调整 `css`、`js` 的文件请求路径在主题的`_config.yml`中配置，便于你更快捷的配置自己的 CDN；
-  - 新增代码是否折行为可配置，默认为折行；
-  - 默认激活 `TOC` 功能，并新增为某篇文章关闭 `TOC` 的 `Front-matter` 配置选项；
-  - 修复文章滚动时，高亮的目录选项不准确的问题；
-  - `IOS`下移除搜索框自动获得焦点属性，防止自动获得焦点后导致视图上移；
-- v1.0.0
-  - 新增了所有基础功能；
+参见 [CHANGELOG.md](https://github.com/blinkfox/hexo-theme-matery/blob/master/README.md)

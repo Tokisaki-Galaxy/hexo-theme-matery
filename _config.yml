@@ -280,6 +280,18 @@ myGallery:
 # 设置在归档页面中是否显示'文章日历'控件
 postCalendar: true
 
+# 不建议使用gittalk,gitment这样权限过高的oauth app,因为它们能够 读写 授权者 所有的公共仓库 ，也就是说拿到你的授权 Token 的人，可以将你的 GitHub 公共仓库删空（这是github权限分的不够细的锅），如果恶意攻击者想获取使用者的 AccessToken，只需要在代码中加上一个 ajax 请求即可。原贴地址:https://www.v2ex.com/t/535608。建议大家看完。（我没有在用gittalk/gitment的网站上评论过，但根据v2ex网友的提示，如果网站自行修改了 gitalk.js 脚本 或者反代了 github api，就很容易拿到你的 Token ）
+
+# https://github.com/utterance/utterances 是个 GitHub App，它的权限仅限于某个仓库。像 hugo hexo 这种静态页面类型的博客，clientID/clientSecret 泄露是不可避免的。我认为较好的解决方式是像 utteras 这种 GitHubApp，只有一个仓库的读写权限，将破坏降到最小。
+
+# valine是使用的免费的leancloud开发版资源，即使数据丢了leancloud也不用负任何的责任。此外valine的src目录已在1.4.0后停止更新。。。薛定谔的开源。
+
+# 当初多说国内最大都倒了，livere不一定靠谱。
+
+# disqus被墙了。
+
+# 畅言需要备案。
+
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
@@ -336,7 +348,7 @@ minivaline:
   enable: true
   appId: 8AtXU8W69pXHWEHIDuuuMLy3-MdYXbMMI # Your leancloud application appid
   appKey: betFnrfutjK2Aa3oKIBvJJnv # Your leancloud application appkey
-  mode: xCss # DesertsP or xCss
+  mode: DesertsP # DesertsP or xCss
   placeholder: Write a Comment # Comment box placeholder
   math: true # Support MathJax.
   md: true # Support Markdown.
@@ -348,22 +360,9 @@ minivaline:
   adminEmailMd5: 43d241fa2b27d31f5448cfdb47d618c0 # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
   tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
     - 管理员
-    - 小伙伴
     - 访客
   master: # The MD5 String Array of master Email to show master Flag.[Just Only xCss Style mode]
     - 43d241fa2b27d31f5448cfdb47d618c0
-  friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
-    - b5bd5d836c7a0091aa8473e79ed4c25e
-    - adb7d1cd192658a55c0ad22a3309cecf
-    - 3ce1e6c77b4910f1871106cb30dc62b0
-    - cfce8dc43725cc14ffcd9fb4892d5bfc
-  # MiniValine's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en  | zh-CN | (and many more)
-  # More i18n info: https://github.com/MiniValine/minivaline-i18n
-  lang:
-  # Expression Url.
-  # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
   emoticonUrl:
     - https://cdn.jsdelivr.net/npm/alus@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
@@ -372,12 +371,26 @@ minivaline:
     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
 
+changyan:
+  enable: false
+  appId:
+  conf:
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: false
   url: https://github.com/blinkfox/hexo-theme-matery
   title: Fork Me
+
+# The configuration of the Twikoo comment module is not activated by default.
+# To use it, activate the configuration item and set envId.
+# Twikoo 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置环境 ID envId.
+# See: https://twikoo.js.org
+twikoo:
+  enable: false
+  envId: twikoo-1gs9l0fb17e7897a # 环境 ID，搭建教程：https://twikoo.js.org/quick-start.html
+  # region: ap-guangzhou # 环境地域，默认为 ap-shanghai
+  # path: 'window.location.pathname' # 自定义文章路径
 
 # The password verification feature of read post. To use this feature,
 # activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
@@ -450,7 +463,8 @@ libs:
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
     valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: /libs/minivaline/MiniValine.js
+    minivaline: /libs/minivaline/MiniValine.js # latest
+    twikoo: /libs/twikoo/twikoo.all.min.js # 若想保持最新版，请替换为 https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js  默认为 /libs/twikoo/twikoo.all.min.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.min.js
@@ -519,6 +533,10 @@ tidio:
   enable: false
   public_key:
 
+# 腾讯兔小巢，见https://txc.qq.com/
+tuxiaochao:
+  enable: false
+  productId:
 #背景canvas-nest
 canvas_nest:
   enable: false
@@ -560,12 +578,13 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 因果は巡る糸車光　と影の多面鏡
-  sub2: 現世の一切は　一時の夢
-  sub3: 善も悪も　愛も嘘も　全て運命の輪の中で
-  sub4: 常世の闇に飲まれゆく
-  sub5: 嗚呼、我は夢の防人
-  sub6: 万華鏡の中で　永遠に生きるのみ
+  sub: 
+  - 因果は巡る糸車光　と影の多面鏡
+  - 現世の一切は　一時の夢
+  - 善も悪も　愛も嘘も　全て運命の輪の中で
+  - 常世の闇に飲まれゆく
+  - 嗚呼、我は夢の防人
+  - 万華鏡の中で　永遠に生きるのみ
 
 # 手机二级菜单.
 navMenu:
@@ -595,9 +614,7 @@ icp:
 #
 # 注：配置了此项，就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），本地调试的时候记得将 此项配置 注释或者删除掉
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
-# https://cdn.jsdelivr.net
-# https://purge.jsdelivr.net/
-
+# 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
   url: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site
 
@@ -615,4 +632,25 @@ artitalk:
 
 live2d:
   enable: false
+  appId: # xxxxx
+  appKey: # xxxxxx
 
+# 哔哔功能配置
+# 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content
+# 点击刚刚创建的content Class，点击添加列并创建名称为content的列，类型为String，注意列注释也要填写（随意填）
+# 记录appid，masterkey，api域名
+# 输入:hexo new page bb
+# hexo就在source文件夹下创建了bb/index.md。
+# 修改index.md的frontmater下的layout为bb：
+# ---
+# title: 黑石说
+# layout: bb
+# ---
+# 里面的文字可以自己随意加，会显示在哔哔的上方。
+# 关注公众号 "黑石哔哔"，发送: //bindCurrentUser:你的APPID,你的MASTERKEY,你的RESTAPI
+# 可用leancloud国际版，国际版api为 https://appid前八位.api.lncldglobal.com
+bbtime:
+ enable: false
+ appId: # 你的appId
+ appKey: # 你的appKey
+ serverURLs: # https://你的api
