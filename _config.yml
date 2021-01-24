@@ -330,9 +330,9 @@ livere:
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: false
-  appId: 8AtXU8W69pXHWEHIDuuuMLy3-MdYXbMMI
-  appKey: betFnrfutjK2Aa3oKIBvJJnv
-  notify: true
+  appId:
+  appKey:
+  notify: false
   verify: false
   visitor: true
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
@@ -350,13 +350,9 @@ minivaline:
   appKey: betFnrfutjK2Aa3oKIBvJJnv # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss
   placeholder: Write a Comment # Comment box placeholder
-  math: true # Support MathJax.
-  md: true # Support Markdown.
   enableQQ: true # Enable QQ avatar API.
   NoRecordIP: false # Do not record commenter IP.
   visitor: true # Article reading statistics.
-  maxNest: 6 # Sub-comment maximum nesting depth.
-  pageSize: 10 # Pagination size.
   adminEmailMd5: 43d241fa2b27d31f5448cfdb47d618c0 # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
   tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
     - 管理员
@@ -364,7 +360,6 @@ minivaline:
   master: # The MD5 String Array of master Email to show master Flag.[Just Only xCss Style mode]
     - 43d241fa2b27d31f5448cfdb47d618c0
   emoticonUrl:
-    - https://cdn.jsdelivr.net/npm/alus@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
