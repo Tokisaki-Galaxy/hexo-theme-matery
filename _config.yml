@@ -330,9 +330,9 @@ livere:
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: false
-  appId:
-  appKey:
-  notify: false
+  appId: 8AtXU8W69pXHWEHIDuuuMLy3-MdYXbMMI
+  appKey: betFnrfutjK2Aa3oKIBvJJnv
+  notify: true
   verify: false
   visitor: true
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
@@ -345,7 +345,7 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: true
+  enable: false
   appId: 8AtXU8W69pXHWEHIDuuuMLy3-MdYXbMMI # Your leancloud application appid
   appKey: betFnrfutjK2Aa3oKIBvJJnv # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss
