@@ -324,6 +324,7 @@
 </script>
 
 <!--酷Q推送-->
+<% if (theme.valine.coolpushkey && theme.valine.coolpushkey > 1) { %>
 <script>
     var pushLink ="https://push.xuthus.cc/send/<%- theme.valine.coolpushkey %>";
     var siteName = "<%- config.title %>'s Blog";
@@ -364,3 +365,4 @@
     send_valine();
   })
 </script>
+<% } %>
