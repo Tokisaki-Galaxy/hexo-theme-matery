@@ -629,7 +629,7 @@ live2d:
     # use: https://cdn.jsdelivr.net/gh/evrstr/live2d-widget-models/live2d_evrstr/k2_3301/model.json
     # use: live2d-widget-model-wanko # npm-module package name
     # use: wanko # 博客根目录/live2d_models/ 下的目录名
-    use: ./kurumi # 相对于博客根目录的路径
+    use: ./snow_miku # 相对于博客根目录的路径
     # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
   mobile:
     show: false
