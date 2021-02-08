@@ -604,7 +604,7 @@ loadingPages:
 
 background:
   enable: true
-  url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.webp"
+  url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"
 
 artitalk:
   enable: true
